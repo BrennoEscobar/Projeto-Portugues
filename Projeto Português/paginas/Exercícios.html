@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Língua portuguesa</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-  <!-- https://fonts.google.com/ -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
-  <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
-  <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+  <title>Língua portuguêsa</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+  <link href="../fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+  <link href="../css/templatemo-diagoona.css" rel="stylesheet" />
   <!--
 
 TemplateMo 550 Diagoona
@@ -110,6 +109,45 @@ https://templatemo.com/tm-550-diagoona
           alert("Resposta incorreta. Tente novamente.");
       }
   }
+
+  function verificarResposta8(event) {
+      event.preventDefault();
+
+      var respostaCorreta = "opcao2"; // Resposta correta (valor do botão de rádio)
+      var respostaSelecionada = document.querySelector('input[name="resposta4"]:checked');
+
+      if (respostaSelecionada && respostaSelecionada.value === respostaCorreta) {
+          alert("Resposta correta! Parabéns!");
+      } else {
+          alert("Resposta incorreta. Tente novamente.");
+      }
+  }
+
+  function verificarResposta9(event) {
+      event.preventDefault();
+
+      var respostaCorreta = "opcao2"; // Resposta correta (valor do botão de rádio)
+      var respostaSelecionada = document.querySelector('input[name="resposta4"]:checked');
+
+      if (respostaSelecionada && respostaSelecionada.value === respostaCorreta) {
+          alert("Resposta correta! Parabéns!");
+      } else {
+          alert("Resposta incorreta. Tente novamente.");
+      }
+  }
+
+  function verificarResposta10(event) {
+      event.preventDefault();
+
+      var respostaCorreta = "opcao3"; // Resposta correta (valor do botão de rádio)
+      var respostaSelecionada = document.querySelector('input[name="resposta4"]:checked');
+
+      if (respostaSelecionada && respostaSelecionada.value === respostaCorreta) {
+          alert("Resposta correta! Parabéns!");
+      } else {
+          alert("Resposta incorreta. Tente novamente.");
+      }
+  }
 </script>
 </head>
 
@@ -134,7 +172,7 @@ https://templatemo.com/tm-550-diagoona
             <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
               <ul class="navbar-nav text-uppercase">
                 <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="Português.html">Início</a>
+                  <a class="nav-link tm-nav-link" href="../Português.html">Início</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="1° Ano.html">1º Ano</a>
@@ -348,17 +386,18 @@ Salmo é o nome de um gênero bíblico com as características abaixo citadas, e
                 
 
                 <h1>Questão 08</h1>
-                <p>Qual é o plural de alemão?</p>
+                <p>
+                  (Itame - 2020 - Prefeitura de Senador Canedo - GO - Assistente Administrativo) - O vocativo é uma invocação ao destinatário. Nas comunicações oficiais, o vocativo será sempre seguido de vírgula. O vocativo a ser empregado em comunicações dirigidas ao Presidente do Congresso Nacional é o seguinte:</p>
 
                 <form onsubmit="event.preventDefault(); verificarResposta();">
                   <input type="radio" id="opcao1" name="resposta" value="opcao1">
-                  <label for="opcao1">Alemãos</label><br>
+                  <label for="opcao1">Senhor Presidente do Congresso Nacional;</label><br>
 
                   <input type="radio" id="opcao2" name="resposta" value="opcao2">
-                  <label for="opcao2">Alemães</label><br>
+                  <label for="opcao2">Excelentíssimo Senhor Presidente do Congresso Nacional.</label><br>
 
                   <input type="radio" id="opcao3" name="resposta" value="opcao3">
-                  <label for="opcao3">Alemanhês</label><br>
+                  <label for="opcao3">Excelentíssimo Senhor Presidente do Congresso Nacional.</label><br>
 
                   <input type="submit" value="Enviar">
                 </form>
@@ -369,17 +408,24 @@ Salmo é o nome de um gênero bíblico com as características abaixo citadas, e
 
                 
                 <h1>Questão 09</h1>
-                <p>Qual é o plural de alemão?</p>
+                <p>
+                  (FGV - 2018 - Prefeitura de Niterói - RJ - Auxiliar Administrativo) - O atual ministro da cultura declarou: “Estou de saco cheio. A gente não consegue mais ir a algum show ou ao cinema sem que haja manifestação política”.
+                  
+                  Os exemplos de linguagem informal nessa fala do ministro são:
+                  
+                  O atual ministro da cultura declarou: “Estou de saco cheio. A gente não consegue mais ir a algum show ou ao cinema sem que haja manifestação política”.
+                  
+                  Os exemplos de linguagem informal nessa fala do ministro são:</p>
 
                 <form onsubmit="event.preventDefault(); verificarResposta();">
                   <input type="radio" id="opcao1" name="resposta" value="opcao1">
-                  <label for="opcao1">Alemãos</label><br>
+                  <label for="opcao1">“algum show” e “saco cheio”;</label><br>
 
                   <input type="radio" id="opcao2" name="resposta" value="opcao2">
-                  <label for="opcao2">Alemães</label><br>
+                  <label for="opcao2">“saco cheio” e “a gente”;</label><br>
 
                   <input type="radio" id="opcao3" name="resposta" value="opcao3">
-                  <label for="opcao3">Alemanhês</label><br>
+                  <label for="opcao3">“manifestação política” e “algum show”.</label><br>
 
                   <input type="submit" value="Enviar">
                 </form>
@@ -389,17 +435,19 @@ Salmo é o nome de um gênero bíblico com as características abaixo citadas, e
                 
 
                 <h1>Questão 10</h1>
-                <p>Qual é o plural de alemão?</p>
+                <p>(Encceja-2019 Prova I - Manhã) - Pedrinho trotava pela fita vermelha da estrada, sobe e desce morro, quebra à direita, à esquerda, pac, pac, pac... Ia pensando na volta. A figueira... Passavam-se ali coisas de arrepiar o cabelo. Pela meia-noite — diziam — o capeta juntava debaixo dela sua corte inteira para pinoteamento de um samba infernal. Os sacis marinhavam galhos por acima em cata de figuinhos, que disputavam aos morcegos. E os lobisomens, então? Vinham aos centos focinhar o esterco das corujas. Almas penadas, isso nem era bom falar! Quando o Quincas da Estiva contava casos da figueira, não havia chapéu que parasse na cabeça. Mas de dia, nada; passarinhada miúda só, a debicar frutinhas. Foi o que o menino viu naquela tarde ao cruzar com a árvore. Mesmo assim passou rápido e encolhidinho — por via das dúvidas.
+
+                  Nessa passagem, a descrição dos pensamentos e ações de Pedrinho demonstra que o personagem</p>
 
                 <form onsubmit="event.preventDefault(); verificarResposta();">
                   <input type="radio" id="opcao1" name="resposta" value="opcao1">
-                  <label for="opcao1">Alemãos</label><br>
+                  <label for="opcao1">vê o campo como um lugar misterioso.</label><br>
 
                   <input type="radio" id="opcao2" name="resposta" value="opcao2">
-                  <label for="opcao2">Alemães</label><br>
+                  <label for="opcao2">desconfia de seres sobrenaturais.</label><br>
 
                   <input type="radio" id="opcao3" name="resposta" value="opcao3">
-                  <label for="opcao3">Alemanhês</label><br>
+                  <label for="opcao3">incorpora as superstições de origem popular.</label><br>
 
                   <input type="submit" value="Enviar">
                 </form>
@@ -424,10 +472,7 @@ Salmo é o nome de um gênero bíblico com as características abaixo citadas, e
       </div>
       <div class="tm-col-right tm-col-footer">
         <footer class="tm-site-footer text-right">
-          <p class="mb-0">Direitos Reservados 2023
-
-            | Design: <a rel="nofollow" target="_parent" href="https://templatemo.com"
-              class="tm-text-link">TemplateMo</a></p>
+          <p></p>
         </footer>
       </div>
     </div>
@@ -438,10 +483,10 @@ Salmo é o nome de um gênero bíblico com as características abaixo citadas, e
     </div>
   </div>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.backstretch.min.js"></script>
-  <script src="js/templatemo-script.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.backstretch.min.js"></script>
+  <script src="../js/templatemo-script.js"></script>
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

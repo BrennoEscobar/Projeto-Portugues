@@ -1,8 +1,8 @@
 const initBg = (autoplay = true) => {
-    const bgImgsNames = ['1_9af6dcafac1fa0489328d1dc8e5762fa_2000-1024x557.png', '1_4c35abc4c08252c216b980440e099df2_2000.png', '_capa_6144b2656eb4a42ff17051cb43375445_2000-1024x557.png'];
-    const bgImgs = bgImgsNames.map(img => "img/" + img);
+    const bgImgsNames = ['1_9af6dcafac1fa0489328d1dc8e5762fa_2000-1024x557.jpg', '../img/1_4c35abc4c08252c216b980440e099df2_2000.jpg', '../img/_capa_6144b2656eb4a42ff17051cb43375445_2000-1024x557.jpg'];
+    const bgImgs = bgImgsNames.map(img => "../img/" + img);
 
-    $.backstretch(bgImgs, {duration: 4000, fade: 500});
+    $.backstretch(bgImgs, {duration: 5500, fade: 500});
 
     if(!autoplay) {
       $.backstretch('pause');  
